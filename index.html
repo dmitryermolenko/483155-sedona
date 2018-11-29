@@ -29,8 +29,6 @@
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </div>
 	    
-	    
-
 	  <section class="booking">
 	  	<h2 class="booking-title">Заинтересовались?</h2>
 	  	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -52,5 +50,38 @@
       	</a>
       </p>
     </footer>
+
+    <section class="modal modal-hotels-search"> 
+      <h3>Поиск гостиницы в Седоне</h3>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="arrival-date-field">Дата заезда:</label>
+          <input type="text" name="arrival-date" id="arrival-date-field">
+          <button class="calendar" type="button">
+            <img src="img/calendar.svg" width="21" height="22" alt="Календарь для выбора даты заезда">
+          </button>
+        </p>
+        <p>
+          <label for="departure-date-field"> Дата выезда:</label>
+          <input type="text" name="departure-date" id="departure-date-field">
+          <button class="calendar" type="button">
+            <img src="img/calendar.svg"  width="21" height="22" alt="Календарь для выбора даты выезда">
+          </button>
+        </p>
+        <p>
+          <label for="number-of-adults-field">Взрослые:</label>
+          <input type="text" name="number-of-adults" id="number-of-adults-field">
+          <button class="increase" type="button">Увеличить</button>
+          <button class="reduce" type="button">Уменьшить</button>
+        </p>
+        <p>
+          <label for="number-of-kids-field">Дети:</label>
+          <input type="text" name="number-of-kids" id="number-of-kids-field">
+          <button class="increase" type="button">Увеличить</button>
+          <button class="reduce" type="button">Уменьшить</button>
+        </p>
+        <button type="submit" name="find">Найти</button>      
+      </form>
+    </section>
   </body>
 </html>

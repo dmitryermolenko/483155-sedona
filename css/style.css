@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  font-weight: 700;
+  color: #000000;
+  list-style: none;
+
+  background-color: #ffffff;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+  background-image: url(../img/welcome-bg.jpg); 
+  background-repeat: no-repeat;
+}
+
+.intro {
+  text-align: center;
+}
+.page-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.intro p {
+  line-height: 26px;
+}
+
+.booking {
+  text-align: center;
+}
+
+.booking-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.booking p {
+  line-height: 24px;
+}
+
+.booking-btn {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: red; /*выделил другим цветом, чтобы надпись была видна, 
+               т.к. пока не знаю что делать с фоном, на котором эта надпись*/
+}
+
+.booking-search {
+  line-height: : 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.booking-field input,
+.booking-field-half input {
+  font: inherit;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.booking-field input:hover,
+.booking-field-half input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-field input:active,
+.booking-field-half input:active {
+  background-color: #ffffff;
+}
+
+.booking-form-btn {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border: none;
+  background-color: #81b3d2;
+}
+
+.booking-form-btn:hover {
+  background-color: #669ec0;
+}
+
+.booking-form-btn:active {
+  background-color: #5496bd;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social {
+  text-align: center;
+}
+.social-list ul {
+  list-style: none;
+}
+
+.footer-copyright {
+  line-height: 26px;
+  text-align: right;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+h3:hover {
+  color: 81b3d2; /*при наведении ничего не происходит, может нужно в ссылку обернуть?*/
+}
+
+.btn {
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #81b3d2; 
+}
+
+.btn-dark {
+ background-color: #766357;
+}
+
+.btn:hover {
+  background-color: #669ec0;
+}
+
+.btn-dark:hover {
+  background-color: #604e43;	
+}
+
+.btn:active {
+ background-color: #5496bd;
+}
+
+.btn-dark:active {
+  background-color: #503e33;
+}
+
+.catalog-item-rating {
+  background-color: #f2f2f2;
+}

@@ -14,6 +14,41 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #669ec0;
+}
+
+.btn:active {
+  background-color: #5496bd;
+}
+
+
+.btn-dark {
+  background-color: #766357;
+}
+
+
+.btn-dark:hover,
+.btn-dark:focus {
+  background-color: #604e43;
+}
+
+.btn-dark:active {
+  background-color: #503e33;
+}
+
+.page-wrapper {
+  text-align: center;
+}
+
+
 .site-navigation {
   font-weight: 700;
   color: #000000;
@@ -26,6 +61,8 @@ a {
   color: #000000;
 }
 
+
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #81b3d2;
@@ -37,17 +74,18 @@ a {
 
 .welcome {
   background-image: url(../img/welcome-bg.jpg); 
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.intro {
-  text-align: center;
-}
 .page-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+
+.intro {
+  text-align: center;
 }
 
 .intro p {
@@ -72,13 +110,11 @@ a {
 .booking-btn {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
-  color: red; /*выделил другим цветом, чтобы надпись была видна, 
-               т.к. пока не знаю что делать с фоном, на котором эта надпись*/
 }
 
+
 .booking-search {
-  line-height: : 26px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
@@ -88,18 +124,22 @@ a {
   font: inherit;
   text-transform: uppercase;
 
-  border: none;
+  border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
 }
 
 .booking-field input:hover,
 .booking-field-half input:hover {
+  border: 2px solid #ebebeb;
   background-color: #ebebeb;
 }
 
-.booking-field input:active,
-.booking-field-half input:active {
+.booking-field input:focus,
+.booking-field-half input:focus {
+  outline: none;
+  border: 2px solid #e5e5e5;
   background-color: #ffffff;
+
 }
 
 .booking-form-btn {
@@ -112,7 +152,8 @@ a {
   background-color: #81b3d2;
 }
 
-.booking-form-btn:hover {
+.booking-form-btn:hover,
+.booking-form-btn:focus{
   background-color: #669ec0;
 }
 
@@ -130,51 +171,40 @@ a {
 .footer-social {
   text-align: center;
 }
-.social-list ul {
+
+.social-link {
+  color: #000000;
+}
+
+.social-list  {
   list-style: none;
 }
+
 
 .footer-copyright {
   line-height: 26px;
   text-align: right;
 }
 
-h3 {
+.copyright:hover {
+  color: #81b3d2;
+}
+
+.catalog-item-title {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
 
-h3:hover {
-  color: 81b3d2; /*при наведении ничего не происходит, может нужно в ссылку обернуть?*/
+.catalog-item-title:hover,
+.catalog-item-title:focus {
+  color: #81b3d2; 
 }
 
-.btn {
-  font-weight: 700;
-  color: #ffffff;
-
-  background-color: #81b3d2; 
+.catalog-item-title:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.btn-dark {
- background-color: #766357;
-}
-
-.btn:hover {
-  background-color: #669ec0;
-}
-
-.btn-dark:hover {
-  background-color: #604e43;	
-}
-
-.btn:active {
- background-color: #5496bd;
-}
-
-.btn-dark:active {
-  background-color: #503e33;
-}
 
 .catalog-item-rating {
   background-color: #f2f2f2;

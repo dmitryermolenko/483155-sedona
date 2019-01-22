@@ -79,6 +79,7 @@ input[type="checkbox"].visually-hidden {
 	-webkit-box-align: center;
 			-ms-flex-align: center;
 					align-items: center;
+	flex-wrap: wrap;
 	width: 1055px;
 	margin: 0 auto;
 	padding: 15px 0;
@@ -169,7 +170,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .features {
-	margin: 45px 0 52px;
+	margin: 45px 0 54px;
 }
 
 .features-list {
@@ -224,6 +225,11 @@ input[type="checkbox"].visually-hidden {
 
 .features-number {
 	font-weight: normal;
+	color: #333333;
+}
+
+.blue-background .features-number {
+	color: #ffffff;
 }
 
 .features-image {
@@ -343,23 +349,27 @@ input[type="checkbox"].visually-hidden {
 	background-color: #eeeeee;
 }
 
-.search-hotel h2 {
-	margin: 0;
-	margin-bottom: 25px;
+.booking h2 {
 	font-size: 30px;
 	line-height: 36px;
-	color: #000000;
+	margin: 0 0 22px;
+	font-weight: bold;
+	color: #333333;
 }
 
-.search-hotel p {
+.booking p {
 	margin: 0 20px;
 	margin-bottom: 46px;
 	line-height: 24px;
+	
+	margin: 0 0 47px;
+	font-weight: normal;
+	color: #333333;
 }
 
 .modal-open-button {
 	display: inline-block;
-	width: 570px;
+	width: 568px;
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
 	position: relative;
@@ -540,7 +550,7 @@ input[type="checkbox"].visually-hidden {
 	left: 0;
 	right: 0;
 	background-color: #ffffff;
-	width: 570px;
+	width: 568px;
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
 	margin: 0 auto;
@@ -605,15 +615,14 @@ input[type="checkbox"].visually-hidden {
 
 .arrival-item input,
 .departure-item input {
-	width: 350px;
-	padding-left: 13px;
+	width: 346px;
+	padding-left: 11px;
 	margin-left: auto;
 }
 
 .search-hotel-item-btn {
 	position: relative;
-	width: 118px;
-	padding-left: 3px;
+	width: 114px;
 }
 
 .adult-item input,
@@ -629,6 +638,7 @@ input[type="checkbox"].visually-hidden {
 	-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 					justify-content: space-between;
+	flex-wrap: wrap;
 	padding-top: 5px;
 }
 
@@ -654,8 +664,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .adult-item label {
-	margin-right: 35px;
-	padding-left: 1px;
+	margin-right: 38px;
 }
 
 .children-item label {
@@ -714,8 +723,8 @@ input[type="checkbox"].visually-hidden {
 .minus-btn::after {
 	content: "";
 	position: absolute;
-	top: 50%;
-	right: 14px;
+	top: 18px;
+	right: 16px;
 	width: 12px;
 	height: 3px;
 	background-color: #898989;
@@ -739,7 +748,7 @@ input[type="checkbox"].visually-hidden {
 .plus-btn::before {
 	content: "";
 	position: absolute;
-	top: 50%;
+	top: 18px;
 	right: 15px;
 	width: 11px;
 	height: 3px;
@@ -749,7 +758,7 @@ input[type="checkbox"].visually-hidden {
 .plus-btn::after {
 	content: "";
 	position: absolute;
-	top: 16px;
+	top: 14px;
 	left: 18px;
 	width: 3px;
 	height: 11px;
@@ -758,9 +767,9 @@ input[type="checkbox"].visually-hidden {
 
 .modal-search-button {
 	display: inline-block;
-	width: 460px;
-	padding: 17px 20px;
-	margin-top: 25px;
+	width: 458px;
+	padding: 16px 20px;
+	margin-top: 27px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -784,6 +793,7 @@ input[type="checkbox"].visually-hidden {
 
 .map {
 	position: relative;
+	height: 593px;
 }
 
 .map iframe {
@@ -804,7 +814,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-filters {
-	padding: 10px 72px;
+	padding: 10px 72px 5px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
@@ -842,12 +852,12 @@ input[type="checkbox"].visually-hidden {
 
 .infrastructure .filter-option {
 	margin-bottom: 24px;
-	padding-left: 38px;
+	padding-left: 40px;
 }
 
 .type .filter-option {
-	margin-bottom: 24px;
-	padding-left: 45px;
+	margin-bottom: 25px;
+	padding-left: 44px;
 }
 
 .filter-option label {
@@ -874,17 +884,19 @@ input[type="checkbox"].visually-hidden {
 
 .infrastructure legend,
 .type legend {
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 	padding-top: 17px;
 	padding-left: 1px;
 }
 
 .infrastructure {
-	margin-right: 110px;
+	margin-right: 116px;
+	margin-left: 0;
 }
 
 fieldset.type {
 	margin-right: auto;
+	margin-left: 0;
 }
 
 .filter-input:hover + label,
@@ -897,7 +909,7 @@ fieldset.type {
 }
 
 .filter-input:disabled + label {
-	color: #ffffff;
+	color: #6a6a6a;
 	opacity: 0.6;
 }
 
@@ -911,17 +923,19 @@ fieldset.type {
 }
 
 .cost legend {
+	margin-left: 5px;
 	padding-top: 17px;
-	margin-bottom: 9px;
+	margin-bottom: 11px;
 }
 
 .cost-range {
 	position: relative;
-	height: 36px;
+	height: 32px;
 	margin-bottom: 20px;
 	font-size: 0;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
+	left:4px;
 }
 
 .cost-range::after {
@@ -940,7 +954,7 @@ fieldset.type {
 .cost-range label {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 32px;
 	vertical-align: top;
 	cursor: pointer;
 }
@@ -948,11 +962,12 @@ fieldset.type {
 .cost-range .min-price {
 	width: 90px;
 	padding-left: 65px;
+	line-height: 21px;
 }
 
 .cost-range .max-price {
 	width: 90px;
-	padding-left: 58px;
+	padding-left: 57px;
 }
 
 .cost-range input {
@@ -979,6 +994,7 @@ fieldset.type {
 .range-controls .bar {
 	width: 80%;
 	height: 2px;
+	margin-left: 5px;
 	background-color: #ffffff;
 }
 
@@ -1002,7 +1018,7 @@ fieldset.type {
 }
 
 .range-toggle-min {
-	left: 0;
+	left: 5px;
 }
 
 .range-toggle-max {
@@ -1078,6 +1094,7 @@ fieldset.type {
 	line-height: 18px;
 	color: #000000;
 	padding-left: 5px;
+	font-weight: normal;
 }
 
 .sorting-list {
@@ -1105,8 +1122,8 @@ fieldset.type {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
-	color: #766357;
-	border-bottom: 1px dotted #766357;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-item a:hover {
@@ -1207,7 +1224,7 @@ fieldset.type {
 
 .catalog-item-info p {
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 11px;
 }
 
 .catalog-item a {
@@ -1241,7 +1258,7 @@ fieldset.type {
 .catalog-item-price .button,
 .catalog-item-price .button-order {
 	display: inline-block;
-	padding: 2px 16px;
+	padding: 3px 17px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
@@ -1308,14 +1325,19 @@ fieldset.type {
 	width: 18px;
 	height: 17px;
 	margin-top: 3px;
-	margin-right: 4px;
+	margin-right: 6px;
 	background-image: url("../img/star-rate.svg");
 	background-repeat: no-repeat;
 }
 
+.stars span:last-of-type {
+    margin-right: 0;
+}
+	
+
 .catalog-item .rate {
 	margin-top: 40px;
-	padding: 5px 15px;
+	padding: 4px 12px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
@@ -1336,7 +1358,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	z-index: 1;
-	padding: 33px 0;
+	padding: 36px 0;
 	color: #000000;
 	background-color: rgba(255, 255, 255, 0.9);
 }
@@ -1367,7 +1389,7 @@ footer {
 	-webkit-box-align: center;
 			-ms-flex-align: center;
 					align-items: center;
-	width: 45px;
+	width: 46px;
 	height: 48px;
 	margin-left: 3px;
 	margin-right: 3px;
@@ -1378,8 +1400,11 @@ footer {
 	background-color: #669ec0;
 }
 
-.social-button:active path,
-.social-button:focus path {
+.social-button:active {
+	background-color: #5496bd;
+}
+
+.social-button:active path {
 	fill: rgba(255, 255, 255, 0.3);
 }
 
